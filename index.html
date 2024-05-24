@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/style.css">
 	<title>Bruno Carvalho</title>
 </head>
+
 <body>
 	<nav class="side-bar-menu">
 		<div class="profile">
-			<h1>BC</h1>
+			<span>BC</span>
 		</div>
 
 		<div class="nav-links">
 			<li>
-				<ul><img src="images/nav/house.png" alt=""><a href="#">Início</a></ul>
-				<ul><img src="images/nav/project.png" alt=""><a href="#">Projetos</a></ul>
-				<ul><img src="images/nav/tech.png" alt=""><a href="#">Tecnologias</a></ul>
-				<ul><img src="images/nav/phone.png" alt=""><a href="#">Contato</a></ul>
+				<ul><a href="#"><img src="images/house.png" alt=""> Início</a></ul>
+				<ul><a href="#"><img src="images/project.png" alt=""> Projetos</a></ul>
+				<ul><a href="#"><img src="images/tech.png" alt=""> Tecnologias</a></ul>
+				<ul><a href="#"><img src="images/phone.png" alt=""> Contato</a></ul>
 			</li>
 		</div>
 	</nav>
 
 	<main>
-		<section class="welcome"></section>
-		<section class="projects"></section>
-		<section class="contact"></section>
+		<section class="welcome">
+			<div class="welcome-info">
+				<h1>Olá!</h1>
+				<h2>Seja bem vindo ao meu portifólio</h2>
+				<p>Meu nome é Bruno Carvalho Tambellini e sou um desenvolvedor backend.</p>
+				<li class="welcome-social">
+					<ul><a href="#github"><img src="images/github.png" alt=""></a></ul>
+					<ul><a href="#linkedIn"><img src="images/linkedin.png" alt=""></a></ul>
+				</li>
+			</div>
+
+			<div class="welcome-photo">
+				<img src="images/profile.png" alt="Foto principal">
+			</div>
+		</section>
+
+		<section class="projects">
+			<h2>Projetos</h2>
+
+			<div class="project project1">
+				<div class="project-image">
+					<img src="images/project-simulate.png" alt="">
+				</div>
+				<div class="project-details">
+					<h3>Project title</h3>
+					<p>[Short project description] Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="project-viewer">
+					<a href="#"><img src="images/code.png" alt="código do projeto"> Código</a>
+					<a href="#"><img src="images/viewer.png" alt="visualizar prévia do projeto rodando"> Visualizar prévia</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<h2>Contato</h2>
+
+			<span>Digite seus dados para me contatar:</span>
+
+			<form>
+				<input type="text" placeholder="Nome">
+				<input type="email" placeholder="Email">
+				<textarea placeholder="Conteúdo do email"></textarea>
+			</form>
+		</section>
 	</main>
 
 	<footer>
 		<li class="social-links">
-			<ul><a href="https://www.github.com" target="_blank"><img src="images/footer/github.png" alt=""></a></ul>
-			<ul><a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/footer/linkedin.png" alt=""></a></ul>
+			<ul><a href="https://www.github.com" target="_blank"><img src="images/github.png" alt=""></a></ul>
+			<ul><a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.png" alt=""></a></ul>
 		</li>
 	</footer>
 
-
 </body>
+
 </html>

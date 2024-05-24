@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    background-color: #2B2730;
+    overflow-x: hidden;
+}
+
+/* ---------- NAV BAR/SIDE BAR ---------- */
+.side-bar-menu {
+    position: fixed;
+    left: 0;
+    background-color: #6554AF;
+    width: 13%;
+    height: 100vh;
+    padding: 30px;
+}
+
+.profile {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 50pt;
+    color: #fff;
+}
+
+.nav-links {
+    margin-top: 50px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links ul {
+    background-color: #2B2730;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.nav-links ul:hover {
+    background-color: #47424d;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links img {
+    margin-right: 10px;
+    filter: invert(100%);
+    width: 20px;
+}
+
+
+/* -------- MAIN CONTENT -------- */
+
+main {
+    margin-left: calc(13% + 60px);
+}
+
+
+/* .......... WELCOME .......... */
+.welcome {
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+
+.welcome-info {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.welcome h1 {
+    font-size: 55pt;
+    color: #6554AF;
+}
+
+.welcome h2{
+    font-size: 35pt;
+    line-height: 1em;
+}
+
+.welcome p {
+    color: #c6c6c6;
+    width: 50%;
+    margin-top: 30px;
+    font-size: 12pt;
+}
+
+/* social links */
+.welcome-social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;   
+    margin-top: 30px;
+}
+
+.welcome-social ul {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.welcome-social img:hover {
+    filter: invert(100%);
+}
+
+.welcome-social img {
+    width: 100%;
+}
+
+/* profile image */
+.welcome-photo {
+    width: 20%;
+}
+
+.welcome-photo img{
+    width: 100%;
+}
+
+/* ........... PROJECTS ........... */
+.projects {
+    /* background-color: red; */
+    color: #fff;
+    height: 100vh;
+    padding: 80px;
+}
+
+.projects h2 {
+    font-size: 35pt;
+    margin-bottom: 30px;
+}
+
+.project {
+    width: 40%;
+    height: 40%;
+    border: 2px solid #fff;
+}
+
+.project-image {
+    width: 400px;
+}
+
+.project-image img {
+    width: 100%;
+}
