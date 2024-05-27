@@ -44,6 +44,7 @@ body {
 
 .nav-links ul:hover {
     background-color: #47424d;
+    transition: 0.3s;
 }
 
 .nav-links a {
@@ -118,6 +119,7 @@ main {
 
 .welcome-social img:hover {
     filter: invert(100%);
+    transition: 0.3s;
 }
 
 .welcome-social img {
@@ -139,6 +141,20 @@ main {
     color: #fff;
     height: 100vh;
     padding: 80px;
+    margin-bottom: 100px;
+}
+
+.list-of-projects {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+}
+
+.list-of-projects img {
+    width: 20px;
 }
 
 .projects h2 {
@@ -147,15 +163,71 @@ main {
 }
 
 .project {
-    width: 40%;
-    height: 40%;
-    border: 2px solid #fff;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    /* border: 2px solid #fff; */
+    margin-bottom: 40px;
+    padding: 15px;
 }
 
 .project-image {
-    width: 400px;
+    width: 40%;
+    margin-right: 5%;
 }
 
 .project-image img {
     width: 100%;
+}
+
+.project-details {
+    width: 55%;
+}
+
+.project-details h3 {
+    font-size: 20pt;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.project-details p {
+    color: #c6c6c6;
+    margin-bottom: 30px;
+}
+
+.project-viewer {
+    display: flex;
+    align-items: center;
+}
+
+.project-viewer a {
+    background-color: #6554AF;
+    color: #fff;
+    display: flex;
+    align-items: center;   
+    text-decoration: none;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.project-viewer a:hover {
+    background-color: #2B2730;
+    color: #6554AF;
+    transition: 0.3s;
+}
+
+.project-viewer img {
+    filter: invert(100%);
+    margin-right: 5px;
+}
+
+
+/* ........... CONTACT ........... */
+
+
+/* ........... FOOTER ........... */
+footer img {
+    width: 20px;
 }
