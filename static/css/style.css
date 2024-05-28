@@ -10,6 +10,18 @@ body {
     overflow-x: hidden;
 }
 
+/* ---------- GLOBAL ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+#projects h2, #techs h2, #contact h2 {
+    color: #fff;
+    font-size: 35pt;
+    margin-bottom: 30px;
+}
+
+
 /* ---------- NAV BAR/SIDE BAR ---------- */
 .side-bar-menu {
     position: fixed;
@@ -67,11 +79,12 @@ body {
 
 main {
     margin-left: calc(13% + 60px);
+    padding: 80px;
 }
 
 
 /* .......... WELCOME .......... */
-.welcome {
+#welcome {
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -82,22 +95,22 @@ main {
     gap: 2rem;
 }
 
-.welcome-info {
+#welcome-info {
     width: 40%;
     margin-right: 50px;
 }
 
-.welcome h1 {
+#welcome h1 {
     font-size: 55pt;
     color: #6554AF;
 }
 
-.welcome h2{
+#welcome h2{
     font-size: 35pt;
     line-height: 1em;
 }
 
-.welcome p {
+#welcome p {
     color: #c6c6c6;
     width: 50%;
     margin-top: 30px;
@@ -136,11 +149,9 @@ main {
 }
 
 /* ........... PROJECTS ........... */
-.projects {
-    /* background-color: red; */
+#projects {
     color: #fff;
-    height: 100vh;
-    padding: 80px;
+    /* height: 100vh; */
     margin-bottom: 100px;
 }
 
@@ -148,27 +159,23 @@ main {
     display: flex;
     flex-direction: column;
     grid-row: 2;
-    /* background-color: red; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .list-of-projects img {
     width: 20px;
 }
 
-.projects h2 {
-    font-size: 35pt;
-    margin-bottom: 30px;
-}
-
 .project {
-    /* background-color: aqua; */
     width: 100%;
     display: flex;
-    /* border: 2px solid #fff; */
-    margin-bottom: 40px;
+    margin-bottom: 10%;
     padding: 15px;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .project-image {
@@ -186,7 +193,6 @@ main {
 
 .project-details h3 {
     font-size: 20pt;
-    letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
@@ -224,10 +230,102 @@ main {
 }
 
 
-/* ........... CONTACT ........... */
+/* ........... TECHS ........... */
+#techs {
+    /* height: 100vh; */
+}
 
+.techs-container {
+    margin: 80px auto;
+    width: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.techs-container li {
+    margin: 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.techs-container img {
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+
+/* ........... CONTACT ........... */
+#contact {
+    width: 100%;
+}
+
+.contact-form {
+    background-color: #6554AF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    width: 50%;
+    margin: 40px auto;
+    border-radius: 15px;
+}
+
+.contact-form span {
+    color: #2B2730;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+#contact form > input {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    font-size: 12pt;
+}
+
+#contact form > textarea {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    font-size: 12pt;
+}
+
+#contact form > input[type="submit"] {
+    background-color: #2B2730;
+    color: #fff;
+    margin: 40px auto;
+    width: calc(100% + 40px);
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#contact form > input[type="submit"]:hover {
+    background-color: #47424d;
+    transition: 0.3s;
+}
 
 /* ........... FOOTER ........... */
+footer  {
+    margin-left: calc(13% + 60px);
+}
+
 footer img {
     width: 20px;
 }
