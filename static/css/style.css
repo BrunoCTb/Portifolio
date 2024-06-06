@@ -17,7 +17,7 @@ html {
 
 #projects h2, #techs h2, #contact h2 {
     color: #fff;
-    font-size: 35pt;
+    font-size: 2.2rem;
     margin-bottom: 30px;
 }
 
@@ -66,12 +66,18 @@ html {
     width: 100%;
     text-decoration: none;
     color: #fff;
+    gap: 5%;
+    font-size: 0.8rem;
 }
 
 .nav-links img {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     filter: invert(100%);
-    width: 20px;
+    width: 12%;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 
@@ -95,11 +101,6 @@ main {
     gap: 2rem;
 }
 
-#welcome-info {
-    width: 40%;
-    margin-right: 50px;
-}
-
 #welcome h1 {
     font-size: 55pt;
     color: #6554AF;
@@ -108,6 +109,7 @@ main {
 #welcome h2{
     font-size: 35pt;
     line-height: 1em;
+    width: 80%;
 }
 
 #welcome p {
@@ -130,22 +132,23 @@ main {
     margin-right: 20px;
 }
 
+.welcome-social img {
+    width: 100%;
+}
+
 .welcome-social img:hover {
     filter: invert(100%);
     transition: 0.3s;
 }
 
-.welcome-social img {
-    width: 100%;
-}
-
 /* profile image */
 .welcome-photo {
-    width: 20%;
+    /* background-color: yellow; */
+    width: 200px;
 }
 
 .welcome-photo img{
-    width: 100%;
+    width: 200px
 }
 
 /* ........... PROJECTS ........... */
@@ -185,6 +188,7 @@ main {
 
 .project-image img {
     width: 100%;
+    height: 100%;
 }
 
 .project-details {
@@ -199,6 +203,7 @@ main {
 .project-details p {
     color: #c6c6c6;
     margin-bottom: 30px;
+    font-size: .9em;
 }
 
 .project-viewer {
@@ -209,6 +214,8 @@ main {
 .project-viewer a {
     background-color: #6554AF;
     color: #fff;
+    width: 20%;
+    height: 25px;
     display: flex;
     align-items: center;   
     text-decoration: none;
@@ -216,6 +223,7 @@ main {
     border: 1px solid #fff;
     padding: 10px 15px;
     border-radius: 8px;
+    font-size: 12px;
 }
 
 .project-viewer a:hover {
@@ -227,6 +235,7 @@ main {
 .project-viewer img {
     filter: invert(100%);
     margin-right: 5px;
+    width: 20%;
 }
 
 
@@ -237,7 +246,7 @@ main {
 
 .techs-container {
     margin: 80px auto;
-    width: 50%;
+    width: 65%;
     color: #fff;
     display: flex;
     align-items: center;
@@ -254,7 +263,7 @@ main {
 
 .techs-container img {
     margin-bottom: 10px;
-    width: 80px;
+    width: 40px;
 }
 
 
@@ -275,7 +284,7 @@ main {
 }
 
 .contact-form span {
-    color: #2B2730;
+    color: #fff;
     font-weight: bold;
     font-size: 20pt;
     margin-bottom: 30px;
