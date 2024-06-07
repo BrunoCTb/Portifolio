@@ -173,6 +173,7 @@ main {
 .project {
     width: 100%;
     display: flex;
+    gap: 5%;
     margin-bottom: 10%;
     padding: 15px;
 }
@@ -182,8 +183,8 @@ main {
 }
 
 .project-image {
-    width: 40%;
-    margin-right: 5%;
+    width: 50%;
+    /* margin-right: 5%; */
 }
 
 .project-image img {
@@ -192,7 +193,8 @@ main {
 }
 
 .project-details {
-    width: 55%;
+    width: 50%;
+    align-items: start;
 }
 
 .project-details h3 {
